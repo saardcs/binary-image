@@ -20,7 +20,7 @@ for i, dec in enumerate(decimal_values):
     prompt = str(dec)
     bin_input = st.sidebar.text_input(prompt, value="", max_chars=8, key=f"row_{i}")
     binary_inputs.append(bin_input.strip())
-
+'''
 if st.sidebar.button("Show Image"):
     binary_grid = []
     for bin_input in binary_inputs:
@@ -29,6 +29,19 @@ if st.sidebar.button("Show Image"):
             binary_grid.append([int(bit) for bit in bin_input])
         else:
             # If invalid, use a blank row as a placeholder
+            binary_grid.append([0] * 8)
+'''
+if st.sidebar.button("Show Image"):
+    binary_grid = []
+    normalized_inputs = []
+    for bin_input in binary_inputs:
+        bin_input = bin_input.strip()
+        if set(bin_input).issubset({'0', '1'}) and len(bin_input) <= 8:
+            padded = bin_input.zfill(8)  # Pad with leading zeros
+            normalized_inputs.append(padded)
+            binary_grid.append([int(bit) for bit in padded])
+        else:
+            normalized_inputs.append("00000000")
             binary_grid.append([0] * 8)
 
     # Create a 2D NumPy array from the binary grid
@@ -41,14 +54,10 @@ if st.sidebar.button("Show Image"):
     st.pyplot(fig)
 
     # Optional: Check correctness against the true binary conversion of the given decimals
-    correct = all(format(decimal_values[i], '08b') == binary_inputs[i] for i in range(8))
+    # correct = all(format(decimal_values[i], '08b') == binary_inputs[i] for i in range(8))
+    correct = all(format(decimal_values[i], '08b') == normalized_inputs[i] for i in range(8))
+
     if correct:
         st.success("✅ All correct! You decoded the image!")
     else:
         st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
-
-
-
-
-
-
