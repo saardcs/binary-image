@@ -11,7 +11,7 @@ Your binary inputs will reveal a hidden image!
 """)
 
 # The decimal values representing each row of the image (you can change these for a new puzzle)
-decimal_values = [0, 66, 66, 0, 24, 36, 66, 0]
+# decimal_values = [0, 66, 66, 0, 24, 36, 66, 0]
 
 # Sidebar input – this column is automatically narrow and mobile-friendly
 st.sidebar.header("Your Binary Inputs")
@@ -41,8 +41,9 @@ if st.sidebar.button("Show Image"):
     st.pyplot(fig)
 
     # Optional: Check correctness against the true binary conversion of the given decimals
-    correct = all(format(decimal_values[i], '08b') == binary_inputs[i] for i in range(8))
-    if correct:
-        st.success("✅ All correct! You decoded the image!")
-    else:
-        st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
+    # correct = all(format(decimal_values[i], '08b') == binary_inputs[i] for i in range(8))
+    # if correct:
+    #     st.success("✅ All correct! You decoded the image!")
+    # else:
+    #     st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
+
