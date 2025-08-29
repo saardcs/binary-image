@@ -20,7 +20,7 @@ for i, dec in enumerate(decimal_values):
     prompt = str(dec)
     bin_input = st.sidebar.text_input(prompt, value="", max_chars=8, key=f"row_{i}")
     binary_inputs.append(bin_input.strip())
-'''
+"""
 if st.sidebar.button("Show Image"):
     binary_grid = []
     for bin_input in binary_inputs:
@@ -30,7 +30,7 @@ if st.sidebar.button("Show Image"):
         else:
             # If invalid, use a blank row as a placeholder
             binary_grid.append([0] * 8)
-'''
+"""
 if st.sidebar.button("Show Image"):
     binary_grid = []
     normalized_inputs = []
@@ -61,3 +61,4 @@ if st.sidebar.button("Show Image"):
         st.success("✅ All correct! You decoded the image!")
     else:
         st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
+
