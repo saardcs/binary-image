@@ -40,12 +40,13 @@ if st.sidebar.button("Show Image"):
     ax.set_yticks([])
     st.pyplot(fig)
 
-    Optional: Check correctness against the true binary conversion of the given decimals
+    # Optional: Check correctness against the true binary conversion of the given decimals
     correct = all(format(decimal_values[i], '08b') == binary_inputs[i] for i in range(8))
     if correct:
         st.success("✅ All correct! You decoded the image!")
     else:
         st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
+
 
 
 
