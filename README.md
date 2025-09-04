@@ -5,14 +5,16 @@ Your binary inputs will reveal a hidden image!
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://binary-image.streamlit.app/)
 
-![Screenshot 1](/media/0eefca84-9010-4e81-9567-aed740a015b1.png)
-![Screenshot 2](/media/27690581-efac-4978-a3d0-c6587f39f894.png)
+![Screenshot 1](/media/e3418aba-c3ab-4a71-8c19-559888fa66fb.png)
 
 ### 📂 How It Works
 
 1. **Enter Binary Values**: Convert the given decimal numbers to 8-bit binary and enter your answers in the sidebar.
 2. **Reveal the Image**: Once you've entered the binary values, press "Show Image" to see the decoded image.
 3. **Check Your Answers**: The app will validate your inputs and show a success message if all the binary numbers are correct.
+
+![Screenshot 1](/media/0eefca84-9010-4e81-9567-aed740a015b1.png)
+![Screenshot 2](/media/27690581-efac-4978-a3d0-c6587f39f894.png)
 
 ---
 
@@ -28,8 +30,6 @@ Your binary inputs will reveal a hidden image!
 ### 📷 Example Output
 
 Once you correctly input the binary numbers, the app will decode them into an image like the one below:
-
-
 
 ---
 
