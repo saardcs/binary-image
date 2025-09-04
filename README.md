@@ -14,6 +14,15 @@ Your binary inputs will reveal a hidden image!
 
 ---
 
+## 🎓 Educational Use
+
+- Designed for students learning about binary numbers and conversions
+- Great for self-paced learning or as part of a classroom activity
+- Helps students practice conversions and digital image decoding in an interactive and engaging way
+- While ideal for students, the app can be used by anyone interested in learning binary numbers and digital image decoding
+
+---
+
 ### 📷 Example Output
 
 Once you correctly input the binary numbers, the app will decode them into an image like the one below:
