@@ -11,7 +11,8 @@ Your binary inputs will reveal a hidden image!
 """)
 
 # The decimal values representing each row of the image (you can change these for a new puzzle)
-decimal_values = [137, 248, 168, 113, 33, 121, 125, 190]
+# decimal_values = [137, 248, 168, 113, 33, 121, 125, 190]
+decimal_values = [60, 126, 255, 219, 126, 60, 126, 219]
 
 # Sidebar input – this column is automatically narrow and mobile-friendly
 st.sidebar.header("Your Binary Inputs")
@@ -61,5 +62,6 @@ if st.sidebar.button("Show Image"):
         st.success("✅ All correct! You decoded the image!")
     else:
         st.info("🔍 Some rows may be incorrect. Please double-check your binary conversions.")
+
 
 
