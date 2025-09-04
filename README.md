@@ -6,3 +6,4 @@ Your binary inputs will reveal a hidden image!
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://binary-image.streamlit.app/)
 
 ![](3ae99b56-a501-470c-a25f-d79daf302b06.png)
+![](e3418aba-c3ab-4a71-8c19-559888fa66fb.png)
