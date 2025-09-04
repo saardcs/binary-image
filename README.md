@@ -18,8 +18,8 @@ Your binary inputs will reveal a hidden image!
 
 Once you correctly input the binary numbers, the app will decode them into an image like the one below:
 
-![Decoded Image 1](https://media/0eefca84-9010-4e81-9567-aed740a015b1.png)
-![Decoded Image 2](https://media/27690581-efac-4978-a3d0-c6587f39f894.png)
+![Decoded Image 1](/media/0eefca84-9010-4e81-9567-aed740a015b1.png)
+![Decoded Image 2](/media/27690581-efac-4978-a3d0-c6587f39f894.png)
 
 ---
 
